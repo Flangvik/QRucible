@@ -3,15 +3,15 @@
 </p>
 
 ## QRucible
-Tiny Python utility that generates "imageless" QR codes in various formats, useful for evading QR code phishing-specific detections. Partially released with an accompanying blog post and talk at x33fcon 2024. **A lot more** to be added during/after Defcon 32.
+Tiny Python utility that generates "imageless" QR codes in various formats, useful for evading QR code phishing-specific detections. Partially released with an accompanying [blog post]("https://flangvik.com/posts/2024-06-13-pixelless-qr-codes-with-qrucible/") and talk at x33fcon 2024. **A lot more** to be added during/after Defcon 32.
 
 ## Install
 
 ```
 pip3 install -r requirements.txt
 python3 QRucible.py 
-
 ```
+
 ## Usage
 
 ```
