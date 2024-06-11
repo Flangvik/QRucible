@@ -35,7 +35,7 @@ options:
 
 ## Example
 
-![QRucible Logo](logo.png)
+![QRucible Example](example.png)
 
 # Credits
 
