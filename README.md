@@ -5,11 +5,31 @@
 ## QRucible
 
 A tiny Python utility that generates "imageless" QR codes in various formats and obfuscates keywords in emails by illustrating them using tables. This is useful for evading keyword-based and AI-assisted QR code phishing-specific detections. Partially released with an accompanying [blog post](https://flangvik.com/posts/2024-06-13-pixelless-qr-codes-with-qrucible/) at x33fcon 2024, with more features added during Defcon 32.
+
 ## Install
 
 ```
 pip3 install -r requirements.txt
 python3 QRucible.py 
+```
+
+For pytesseract and the keyword obfuscation to work correctly, you may also need to install Tesseract OCR separately
+
+For Ubuntu:
+
+```sh
+sudo apt-get install tesseract-ocr
+```
+
+For macOS using Homebrew:
+```sh
+brew install tesseract
+```
+
+For Windows:
+```
+    Download the Tesseract installer from [tesseract GitHub](https://github.com/UB-Mannheim/tesseract/wiki).
+    Run the installer and follow the instructions.
 ```
 
 ## Usage
@@ -36,11 +56,19 @@ options:
 
 ## CSS/Table QR Code Example
 The below QR code is generated using HTML tables
+```
+.\QRucible.py -u https://youtu.be/dQw4w9WgXcQ -i '.\MFA_QR_CODE _TEMPLATE.html' --tables --eml
+```
+
 ![QRucible Example](example.png)
 
 
 ## Keyword Obfuscation Example
 The keywords marked in the email below are illustrated using tiny tables, not text, and will therefore confuse AI trying to understand context / bypass keyword flagging/detection.
+```
+.\QRucible.py -u https://youtu.be/dQw4w9WgXcQ -i '.\MFA_QR_CODE _TEMPLATE.html' --tables --obfuscate QR mobile device MFA
+```
+
 ![QRucible Example](example_keyword.png)
 # Credits
 
