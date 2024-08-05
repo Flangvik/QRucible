@@ -299,10 +299,10 @@ if __name__ == "__main__":
     parser.add_argument('-s', '--size', type=int, default=40, help='The box size of the QR code. (default: 40)')
     parser.add_argument('-i', '--input', type=str, help='The input HTML (template) file, replaces the string QR_PLACEHOLDER with the QR code')
     parser.add_argument('-o', '--output', type=str, help='The output path to an HTML or EML file.')
-    parser.add_argument('--css', action='store_true', help='Generate QR code using CSS format.')
-    parser.add_argument('--tables', action='store_true', default=True, help='Generate QR code using the Table method. Default')
+    parser.add_argument('--css', action='store_true', help='Generate QR code using the CSS method.')
+    parser.add_argument('--tables', action='store_true', default=True, help='Generate QR code using the table method. Default')
     parser.add_argument('--eml', action='store_true', help='Generate an EML file instead of an HTML file.')
-    parser.add_argument('--obfuscate', type=str, nargs='+', help='Keywords to obfuscate by converting them into images.')
+    parser.add_argument('--obfuscate', type=str, nargs='+', help='Keywords to obfuscate by illustrating them as tables.')
     args = parser.parse_args()
 
     print_banner()
