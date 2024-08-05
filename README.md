@@ -27,10 +27,9 @@ brew install tesseract
 ```
 
 For Windows:
-```
-    Download the Tesseract installer from [tesseract GitHub](https://github.com/UB-Mannheim/tesseract/wiki).
-    Run the installer and follow the instructions.
-```
+Download the Tesseract installer from [tesseract GitHub](https://github.com/UB-Mannheim/tesseract/wiki).
+Run the installer and follow the instructions.
+
 
 ## Usage
 
