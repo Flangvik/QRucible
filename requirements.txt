@@ -1,3 +1,8 @@
+beautifulsoup4
+html2image
+pillow
+pytesseract
 qrcode
 numpy
+argparse
 pyfiglet
